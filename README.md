@@ -6,5 +6,5 @@ This image runs [gohugo](http://gohugo.io) with user "hugo" with  [gosu](https:/
 Example usage:
 
 ```
-docker run -d --name gohugo -v /path/to/your/content/:/data thanosme/gohugo:0.17 server -w --bind 0.0.0.0
+docker run -d --name gohugo -v /path/to/your/content/:/data thanosme/gohugo server -w --bind 0.0.0.0
 ```
