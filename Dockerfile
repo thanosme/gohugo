@@ -2,10 +2,10 @@ FROM alpine:latest
 MAINTAINER thanos_me <thanosme@totallynoob.com>
 
 RUN apk add --no-cache --update wget \
- && wget --no-check-certificate https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz \
- && tar zxvf hugo_0.17_Linux-64bit.tar.gz \
- && mv hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 /usr/local/bin/hugo \
- && rm -r hugo_0.17_linux_amd64 \
+ && wget --no-check-certificate https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1_Linux-64bit.tar.gz \
+ && tar zxvf hugo_0.18.1_Linux-64bit.tar.gz \
+ && mv hugo_0.18.1_linux_amd64/hugo_0.18.1_linux_amd64 /usr/local/bin/hugo \
+ && rm -r hugo_0.18.1_linux_amd64 hugo_0.18.1_Linux-64bit.tar.gz\
  && chmod +x /usr/local/bin/hugo
 
 RUN adduser hugo -H -D -s /bin/false
